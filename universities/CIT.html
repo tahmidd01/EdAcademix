@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EdAcademix</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5EH+HLwMxaZJzDdMWNxlWfOmkR1F7xhEMBkCtKHxdsOTbPdCoP0U8yEFQRwrb5Pg" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/cit.css">
+	<link rel="stylesheet"  href="css/responsive.css">
+</head>
+<body>
+		<!-- header part html start -->
+	<header>
+	<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="welcome">
+					<p>Welcome to EdAcademix</p>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="header_text">
+					<p>Your Bridge to Global Success!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+	 <!-- header part html end -->
+
+<!-- Navbar HTML part start -->
+<nav class="navbar navbar-expand-lg">
+	<div class="container">
+	  <a class="navbar-brand" href="#">
+		<img src="img/EDLOGO.png">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link " aria-current="page" href="../index.php">Home</a>
+		  </li>
+           <!-- Dream Countries Dropdown -->
+<li class="nav-item dropdown" id="dreamDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dream Countries
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dreamcountry-option" href="../desh.html"><b>Australia</b></a></li>
+    <li><a class="dreamcountry-option" href="../desh2.html"><b>England</b></a></li>
+    <li><a class="dreamcountry-option" href="../desh3.html"><b>Germany</b></a></li>
+    <!-- <li><a class="dreamcountry-option" href="../desh4.html"><b>Italy</b></a></li> -->
+    <li><a class="dreamcountry-option" href="../desh5.html"><b>United States of America</b></a></li>
+    <li><hr class="dropdown-divider"></li>
+  </ul>
+</li>
+  
+		  <li class="nav-item">
+			<a class="nav-link" href="#">IELTS Prep</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Get Offer Letter</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../contact.php">Contacts</a>
+		  </li>
+		  
+
+				<li><hr class="dropdown-divider"></li>
+			</ul>
+		<!-- Search Form -->
+        <div id="suggestions" class="suggestions"></div>
+<form class="d-flex" role="search" method="get" action="#" onsubmit="return validateSearch()">
+    <input id="searchInput" name="search_query" class="search-input" type="search" placeholder="Search for subjects" aria-label="Search" required>
+    <button class="search-button" type="submit">
+        <img src="img/search.png" alt="Search" class="search-icon">
+    </button>
+</form>	  
+	  </div>
+	</div>
+  </nav>
+ <!-- Navbar HTML part end  -->
+
+<!-- 2nd navbar html start-->
+<nav class="second-navbar">
+	<div class="container">
+	  <ul class="nav-list">
+      <!-- LEFT SIDE -->
+      <li class="left-group d-flex align-items-center gap-3">
+
+        <button class="home-button" onclick="location.href='../index.php';">
+          <img src="img/h1.png" alt="Home">
+        </button>
+				<!-- ✅ Academics Dropdown -->
+<li class="nav-item dropdown-ac" id="academicsDropdown">
+
+			<a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownToggle">
+				Academics
+			</a>
+			<ul class="dropdown-menu" id="dropdownMenu">
+				<li><a class="academics-options" href="../pro_academic_caltech.php">Programs</a></li>
+				<li><a class="academics-options" href="../scholar_academic_caltech.php">Scholarships</a></li>
+				<li><a class="academics-options" href="../fee_academic_caltech.php">Tution Fees</a></li>
+
+				<li><hr class="dropdown-divider"></li>
+			</ul>
+			</li>
+
+        <a href="../req_caltech.php">Requeirments</a>
+        <a href="CIT_contact.html">Help-Line</a>
+      </li>
+
+      <!-- RIGHT SIDE -->
+      <li class="right-group ms-auto d-flex align-items-center gap-3">
+        <a href="#">FAQs</a>
+        <a href="#">Log in / Sign up</a>
+        <button class="profile-button">
+          <img src="img/p1.png" alt="Profile">
+        </button>
+      </li>
+	  </ul>
+	</div>
+  </nav>
+
+  <!-- 2nd navbar html end-->
+
+<!-- body part starts -->
+<div class="banner-container position-relative">
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/caltech_1.jpg" class="d-block w-100 banner-img" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/caltech_2.jpg" class="d-block w-100 banner-img" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/caltech_3.jpg" class="d-block w-100 banner-img" alt="Slide 3">
+      </div>
+    </div>
+  </div>
+
+<!-- Right-to-left diagonal overlay -->
+<div class="diagonal-overlay">
+  <div class="banner-content">
+    
+    <div class="d-flex align-items-center mb-3 move-group-up">
+      <img src="img/caltechlogo.jpeg" class="harvard-logo" alt="Harvard Logo">
+      <h4 class="ms-4 mb-0 fw-bold">California Institute of Technology</h4>
+    </div>
+
+    <!-- ✅ Animated Text -->
+    <div class="wave-text">
+The California Institute of Technology (Caltech), established in 1891 in Pasadena,<br> California. Embracing its motto The truth shall make you free, Caltech fosters<br> a culture of discovery and innovation. Under the leadership of President Thomas<br> F. Rosenbaum, the institute maintains a selective enrollment of approximately<br> 2,400 students. Caltech's academic structure encompasses six divisions, including<br> Biology and Biological Engineering, Chemistry and Chemical Engineering, and Physics,<br> Mathematics, and Astronomy. The university is distinguished by its management of<br> NASA's Jet Propulsion Laboratory and includes 40 Nobel laureates. In the QS World<br> University Rankings 2025, Caltech holds the 10th position globally.
+    </div>
+
+    <a href="#" class="check-btn">EXPLORE YOUR PREFERENCES</a>
+
+
+    <!-- <div class="info-links mt-3">
+      
+   
+      <div style="position: relative;">
+        <a href="#" id="fieldsBtn" class="info-btn">Fields of Study</a>
+      </div>
+
+   
+      <div style="position: relative;">
+        <a href="#" id="programsBtn" class="info-btn">Program Offered</a>
+        <ul id="programsDropdown" class="banner-dropdown" style="display: none;">
+          <li><a href="undergraduate.html">Undergraduate</a></li>
+          <li><a href="graduate.html">Graduate</a></li>
+          <li><a href="phd.html">PhD</a></li>
+        </ul>
+      </div>
+
+
+      <div style="position: relative;">
+        <a href="#" id="feesBtn" class="info-btn">Tuition Fees</a>
+        <ul id="feesDropdown" class="banner-dropdown" style="display: none;">
+          <li><a href="undergraduate-fees.html">Undergraduate</a></li>
+          <li><a href="graduate-fees.html">Graduate</a></li>
+          <li><a href="phd-fees.html">PhD</a></li>
+        </ul>
+      </div>
+
+    </div> -->
+  </div>
+</div>
+
+<!-- body part ends -->
+
+<!-- Chatbot Icon -->
+<!-- <a href="#" class="chatbot-icon" title="Chat with us">
+	<img src="img/CB.png" alt="Chatbot"></a>
+   -->
+
+	<div id="faqOverlay">
+		<div id="faqPopup">
+		  <i class="fas fa-times" id="closeFaqPanel"></i>
+	  
+		  <div class="faq-header-bar">
+			<img src="img/EDLOGO.png" alt="EdAcademix Logo" class="faq-logo" />
+			<h3><b>Here are some frequently asked questionnaires about EdAcademix!</b></h3>
+		  </div>
+	  
+		  <div class="faq-item">
+			<button class="faq-question">
+			  1. What is EdAcademix? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>EdAcademix is an all-in-one educational platform designed to help Bangladeshi students plan their higher studies abroad. It offers country selection tools, university databases, scholarship info, IELTS prep, and applying for offer letter support — all in one place.</p>
+			</div>
+		  </div>
+	  
+		  <div class="faq-item">
+			<button class="faq-question">
+			  2. How do I choose my dream country for study? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>You can use our Dream Country Selection tool to filter countries based on your budget, field of interest, tuition fees, and scholarship opportunities.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				3.Can I search for universities based on my preferred subject or tuition budget? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Yes! Our Advanced Search & Filter System lets you explore universities based on program type, field of study, tuition fee range, and more.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				4.How reliable is the information in university profiles? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Each University Profile is curated from official sources and updated regularly to ensure students get accurate details on programs, costs, location, and admission criteria.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				5.What types of scholarships are listed on EdAcademix? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>We provide details on both government and university scholarships, including eligibility, deadlines, and how to apply — filtered by country and program.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				6.How does the automated offer letter feature work? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Our Smart Apply system generates a pre-filled application form based on your profile and preferences, which you can submit to get your University Offer Letter with minimal effort.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				7.Is IELTS preparation available for free? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Yes! Our IELTS Preparation Hub offers free access to practice tests, vocabulary training, writing tips, and more, powered by a specialized chatbot for instant help.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				8.How do the chatbots work on EdAcademix? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>There are two AI-driven bots:
+	
+				One is your Study Abroad Advisor (powered by GPT), which helps you decide on country, course, and university based on your profile. The other is the IELTS Assistant, which offers keyword-based help for your IELTS prep journey.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				9.Do I need to sign up to use all features? <span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Yes, you must log in or sign up to access personalized tools like offer letter automation, chatbot conversations, and IELTS preparation resources</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				10.Can I talk to a real counselor through EdAcademix?<span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>While the current version offers AI support, we plan to integrate live counselor chat in the future for personalized guidance.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				11.Is EdAcademix suitable for students outside Bangladesh?<span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>While our primary focus is Bangladeshi students, international students can also explore universities and scholarship opportunities through the platform.</p>
+			</div>
+		  </div>
+		  <div class="faq-item">
+			<button class="faq-question">
+				12.How often is the platform updated?<span class="icon">+</span>
+			</button>
+			<div class="faq-answer">
+			  <p>Our backend ensures frequent data updates on university info, scholarship deadlines, and admission policies to keep users well-informed.</p>
+			</div>
+		  </div>
+	
+	  
+		  <!-- Repeat the same pattern for all FAQ items -->
+		</div>
+	  </div>
+
+	  <!-- Notification Banner -->
+	  <div id="notificationBanner">
+		<div class="banner-header">
+		  Access Required!
+		  <span class="banner-controls" style="float: right; cursor: pointer;">
+			<span id="closeBtn">X</span>
+		  </span>
+		</div>
+	  
+		<div class="banner-body1">
+		  <img src="img/error.png" alt="Warning" class="warning-icon">
+		  <span>Currently, you cannot access this feature.</span>
+		</div>
+	  
+		<div class="banner-body">
+		  Please login or sign up to get access of this feature.
+		</div>
+	  
+		<div class="banner-footer">
+		  <button id="cancelBtn">Cancel</button>
+		  <button id="okBtn">Okay</button>
+		</div>
+	  </div>
+	  
+   
+  <!-- footer line starts -->
+  <div class="secondary-footer">
+	<!-- your content -->
+  </div>
+  
+  <!-- footer line ends -->
+
+<!-- footer2 html part start  -->
+ <footer>
+	<div class="container">
+		<div class="row">
+			<!-- 1st Column: Company Info -->
+			<div class="col-md-4">
+				<div class="footer_text">
+					<h3><b><u>ADDRESS</u></b></h3>
+					<p>United International University, UIU Permanent Campus</p>
+					<p>United City, Madani Avenue</p>
+					<p>Notun Bazar, 100 - Feet, Dhaka - 1212</p>
+				</div>
+			</div>
+			
+			<!-- 2nd Column: Links -->
+			<div class="col-md-4">
+				<div class="footer_links">
+					<h3><b><u>USEFUL LINKS</u></b></h3>
+					<ul>
+						<li><a href="../about.php">About EdAcademix</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Success Stories</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 3rd Column: Social Media -->
+			<div class="col-md-4">
+				<div class="footer_social">
+				  <h3><b><u>FOLLOW US</u></b></h3>
+				  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+				  <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+				  <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+				  <a href="#"><i class="fas fa-envelope"></i> Email</a>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="footer-bottom-left">
+		  <a href="#" class="copyright">@Copyright</a>
+		</div>
+		<div class="footer-bottom-right">
+		  <span>||</span>
+		  <a href="#">Data Privacy Statement</a>
+		  <span>||</span>
+		  <a href="#">Cookies</a>
+		  <span>||</span>
+		</div>
+	  </div>
+	  
+	  
+</footer>
+<!-- footer html part end  -->
+
+
+<!-- js link start -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldZa5p5fC2G6KZs4Ks8lg2a44cId4jTkz76PKaX" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cn7l7gDp0eyIG6mvEH16lAaqjZfGnirKwrjvJoaAqh6Ez4eZ0CtFLR69Zo5I2sT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- js link end -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // ✅ Toggle Dropdown Helper
+  function setupDropdown(toggleSelector, menuSelector, containerId) {
+    const toggle = document.querySelector(toggleSelector);
+    const menu = document.querySelector(menuSelector);
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        menu.classList.toggle('show');
+      });
+
+      // Attach only one global click listener per dropdown
+      document.addEventListener('click', function (e) {
+        if (!document.getElementById(containerId).contains(e.target)) {
+          menu.classList.remove('show');
+        }
+      });
+    }
+  }
+
+  // ✅ Setup Academics and Dream Countries dropdowns
+  setupDropdown('#academicsDropdown > a.nav-link.dropdown-toggle', '#academicsDropdown > ul.dropdown-menu', 'academicsDropdown');
+  setupDropdown('#dreamDropdown > a.nav-link.dropdown-toggle', '#dreamDropdown > ul.dropdown-menu', 'dreamDropdown');
+
+  // ✅ Banner dropdowns (unchanged)
+  function toggleBannerDropdown(dropdownId) {
+    document.querySelectorAll('.banner-dropdown').forEach(dropdown => {
+      if (dropdown.id === dropdownId) {
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      } else {
+        dropdown.style.display = 'none';
+      }
+    });
+  }
+
+  const fieldsBtn = document.getElementById("fieldsBtn");
+  if (fieldsBtn) {
+    fieldsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("fieldsDropdown");
+    });
+  }
+
+  const programsBtn = document.getElementById("programsBtn");
+  if (programsBtn) {
+    programsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("programsDropdown");
+    });
+  }
+
+  const feesBtn = document.getElementById("feesBtn");
+  if (feesBtn) {
+    feesBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("feesDropdown");
+    });
+  }
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest('.info-links')) {
+      document.querySelectorAll('.banner-dropdown').forEach(dropdown => {
+        dropdown.style.display = 'none';
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

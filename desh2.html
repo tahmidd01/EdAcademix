@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EdAcademix</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5EH+HLwMxaZJzDdMWNxlWfOmkR1F7xhEMBkCtKHxdsOTbPdCoP0U8yEFQRwrb5Pg" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/tagcon2.css">
+	<link rel="stylesheet"  href="css/responsive.css">
+
+</head>
+<body>
+	<!-- header part html start -->
+	<header>
+	<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="welcome">
+					<p>Welcome to EdAcademix</p>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="header_text">
+					<p>Your Bridge to Global Success!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+	 <!-- header part html end -->
+
+<!-- Navbar HTML part start -->
+<nav class="navbar navbar-expand-lg">
+	<div class="container">
+	  <a class="navbar-brand" href="#">
+		<img src="img/EDLOGO.png">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link " aria-current="page" href="index.php">Home</a>
+		  </li>
+           <!-- Dream Countries Dropdown -->
+<li class="nav-item dropdown" id="dreamDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dream Countries
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dreamcountry-option" href="desh.html"><b>Australia</b></a></li>
+    <li><a class="dreamcountry-option" href="desh2.html"><b>England</b></a></li>
+    <li><a class="dreamcountry-option" href="desh3.html"><b>Germany</b></a></li>
+    <!-- <li><a class="dreamcountry-option" href="desh4.html"><b>Italy</b></a></li> -->
+    <li><a class="dreamcountry-option" href="desh5.html"><b>United States of America</b></a></li>
+    <li><hr class="dropdown-divider"></li>
+  </ul>
+</li>
+  
+		  <li class="nav-item">
+			<a class="nav-link" href="#">IELTS Prep</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Get Offer Letter</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.php">Contacts</a>
+		  </li>
+		  
+
+				<li><hr class="dropdown-divider"></li>
+			</ul>
+		<!-- Search Form -->
+        <div id="suggestions" class="suggestions"></div>
+<form class="d-flex" role="search" method="get" action="search_eng.php" onsubmit="return validateSearch()">
+    <input id="searchInput" name="search_query" class="search-input" type="search" placeholder="Search for universities" aria-label="Search" required>
+    <button class="search-button" type="submit">
+        <img src="img/search.png" alt="Search" class="search-icon">
+    </button>
+</form>		  
+	  </div>
+	</div>
+  </nav>
+ <!-- Navbar HTML part end  -->
+
+<!-- 2nd navbar html start-->
+<nav class="second-navbar">
+	<div class="container">
+	  <ul class="nav-list">
+		<!-- LEFT SIDE -->
+		<li class="left-group">
+		<button class="home-button" onclick="location.href='index.php';">
+			<img src="img/h1.png" alt="Home">
+		</button>
+		  <a href="about_eng.php">About</a>
+		  <a href="uni_eng.php">Universities</a>
+		</li>
+  
+		<!-- RIGHT SIDE -->
+		<li class="right-group">
+		  <a href="#">FAQs</a>
+		  <a href="#">Log in / Sign up</a>
+		  <button class="profile-button">
+			<img src="img/p1.png" alt="Profile">
+		  </button>
+		</li>
+	  </ul>
+	</div>
+  </nav>
+
+  <!-- 2nd navbar html end-->
+
+ <!-- Carousel Start -->
+ <div class="container-fluid mt-0">
+	<div class="row">
+	  <!-- Left text section -->
+	  <div class="col-md-5">
+		<div>
+		  <h2><b>"Greetings from England,</b></h2>
+		  <p>
+			a land of timeless landmarks and modern innovation, nestled in northwestern Europe with lush countryside, bustling cities, world-class education, vibrant culture, and the British Pound (GBP) as its currency."
+		  </p>
+		</div>
+	  </div>
+  
+	  <!-- Right carousel section -->
+	  <div class="col-md-7 p-0">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="2000">
+			  <img src="img/eng1.jpg" class="d-block w-100" alt="Banner 1">
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+			  <img src="img/eng2.jpg" class="d-block w-100" alt="Banner 2">
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+			  <img src="img/eng3.jpg" class="d-block w-100" alt="Banner 3">
+			</div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+  <!-- Carousel End -->		
+
+    <!-- Chatbot Icon -->
+<!-- <a href="#" class="chatbot-icon" title="Chat with us">
+	<img src="img/CB.png" alt="Chatbot"></a> -->
+
+   <!-- filter option html start -->
+     
+   <!-- <div class="container mt-4"> -->
+	<div class="row">
+	  <div class="col-12">
+		<div class="filter-section">
+<button class="filter-label">FILTER BY</button>
+<button class="filter-option" onclick="location.href='program_eng.php'">Program Wise</button>
+<button class="filter-option" onclick="location.href='tuitionfee_eng.php'">Tuition Fees Wise</button>
+<button class="filter-option" onclick="location.href='rank_eng.php'">World Ranking Wise</button>
+		</div>
+	  </div>
+	</div>
+  <!-- </div> -->
+  
+  <!-- filter option html end --> 
+
+<!-- Notification Banner -->
+<div id="notificationBanner">
+	<div class="banner-header">
+	  Access Required! 🔒
+	  <span class="banner-controls" style="float: right; cursor: pointer;">
+		<span id="minimizeBtn" title="Minimize" style="margin-right: 10px;">–</span>
+		<span id="expandBtn" title="Expand" style="margin-right: 10px;">□</span>
+		<span id="closeBtn">&#x274C;</span>
+	  </span>
+	</div>
+	<div class="banner-body">
+	  You need to log in or sign up to access this feature, thank you!
+	</div>
+	<div class="banner-footer">
+	  <button id="cancelBtn">Cancel</button>
+	  <button id="okBtn">Okay</button>
+	</div>
+  </div>
+  
+
+ <!-- footer line starts -->
+ <div class="secondary-footer">
+	<!-- your content -->
+  </div>
+  
+  <!-- footer line ends -->
+
+<!-- footer2 html part start  -->
+ <footer>
+	<div class="container">
+		<div class="row">
+			<!-- 1st Column: Company Info -->
+			<div class="col-md-4">
+				<div class="footer_text">
+					<h3><b><u>ADDRESS</u></b></h3>
+					<p>United International University, UIU Permanent Campus</p>
+					<p>United City, Madani Avenue</p>
+					<p>Notun Bazar, 100 - Feet, Dhaka - 1212</p>
+				</div>
+			</div>
+			
+			<!-- 2nd Column: Links -->
+			<div class="col-md-4">
+				<div class="footer_links">
+					<h3><b><u>USEFUL LINKS</u></b></h3>
+					<ul>
+						<li><a href="about.php">About EdAcademix</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Success Stories</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 3rd Column: Social Media -->
+			<div class="col-md-4">
+				<div class="footer_social">
+				  <h3><b><u>FOLLOW US</u></b></h3>
+				  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+				  <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+				  <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+				  <a href="#"><i class="fas fa-envelope"></i> Email</a>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="footer-bottom-left">
+		  <a href="#" class="copyright">@Copyright</a>
+		</div>
+		<div class="footer-bottom-right">
+		  <span>||</span>
+		  <a href="#">Data Privacy Statement</a>
+		  <span>||</span>
+		  <a href="#">Cookies</a>
+		  <span>||</span>
+		</div>
+	  </div>
+	  
+	  
+</footer>
+<!-- footer html part end  -->
+  
+
+<!-- js link start -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldZa5p5fC2G6KZs4Ks8lg2a44cId4jTkz76PKaX" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cn7l7gDp0eyIG6mvEH16lAaqjZfGnirKwrjvJoaAqh6Ez4eZ0CtFLR69Zo5I2sT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- js link end -->
+
+  <script>
+// JavaScript for Sliding Panel
+const slideBtn = document.getElementById('slideBtn'); // Ensure a button with this ID exists
+const closeSlideBtn = document.getElementById('closeSlideBtn');
+const slidePanel = document.getElementById('slidePanel');
+
+// Open the sliding panel
+if (slideBtn) {
+  slideBtn.addEventListener('click', () => {
+    slidePanel.classList.add('open');
+  });
+}
+
+// Close the sliding panel
+if (closeSlideBtn) {
+  closeSlideBtn.addEventListener('click', () => {
+    slidePanel.classList.remove('open');
+  });
+}
+
+// dropdown js 
+
+function toggleCountryList(event) {
+      event.preventDefault();
+      const countryList = document.getElementById('country-list');
+      countryList.classList.toggle('d-none');
+    }
+
+    // Toggle the visibility of the program list
+    function toggleProgramList(event) {
+      event.preventDefault();
+      const programList = document.getElementById('program-list');
+      programList.classList.toggle('d-none');
+    }
+
+    // Handle selection and update the label inside the dropdown
+    function selectOption(type, value) {
+      if (type === 'country') {
+        // Update the country label to the selected option
+        const countryLabel = document.getElementById('selected-country-label');
+        countryLabel.textContent = value;
+      } else if (type === 'program') {
+        // Update the program label to the selected option
+        const programLabel = document.getElementById('selected-program-label');
+        programLabel.textContent = value;
+      }
+    }
+
+const faqsOption = document.getElementById('faqsOption');
+const faqOverlay = document.getElementById('faqOverlay');
+const faqPopup = document.getElementById('faqPopup');
+const carousel = document.getElementById('carouselExampleIndicators');
+const closeFaqPanel = document.getElementById('closeFaqPanel');
+
+// Function to position FAQ popup over banner (without affecting anything else)
+function positionFaqOverBanner() {
+  const rect = carousel.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const bannerTop = rect.top + scrollTop;
+  faqPopup.style.top = `${bannerTop + 20}px`; // slightly below banner top for spacing
+}
+
+// Open FAQ panel
+faqsOption.addEventListener('click', (e) => {
+  e.preventDefault();
+  positionFaqOverBanner();
+  faqOverlay.style.display = 'block';
+  // Trigger reflow to allow animation
+  void faqPopup.offsetWidth;
+  faqOverlay.classList.add('open');
+});
+
+// Close panel when clicking outside
+faqOverlay.addEventListener('click', (e) => {
+  if (e.target === faqOverlay) {
+    faqOverlay.classList.remove('open');
+    setTimeout(() => {
+      faqOverlay.style.display = 'none';
+    }, 500); // Match transition duration
+  }
+});
+
+// Close panel when clicking the close "X" icon
+closeFaqPanel.addEventListener('click', () => {
+  faqOverlay.classList.remove('open');
+  setTimeout(() => {
+    faqOverlay.style.display = 'none';
+  }, 500); // Match transition duration
+});
+
+// Reposition on resize (optional)
+window.addEventListener('resize', () => {
+  if (faqOverlay.classList.contains('open')) {
+    positionFaqOverBanner();
+  }
+});
+
+// Toggle FAQ answers when questions are clicked
+const faqQuestions = document.querySelectorAll('.faq-question'); // Collect all FAQ questions
+
+faqQuestions.forEach((question) => {
+  question.addEventListener('click', function () {
+    const answer = this.nextElementSibling; // Get the corresponding answer div
+
+    // Close all other answers before opening the clicked one
+    document.querySelectorAll('.faq-answer').forEach((ans) => {
+      if (ans !== answer) {
+        ans.classList.remove('open'); // Collapse other answers
+      }
+    });
+
+    // Toggle the open class on the clicked answer
+    answer.classList.toggle('open');
+  });
+});
+
+
+// const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.icon');
+
+    // Close other open answers
+    document.querySelectorAll('.faq-answer').forEach((el) => {
+      if (el !== answer) {
+        el.style.display = 'none';
+        el.previousElementSibling.querySelector('.icon').textContent = '+';
+      }
+    });
+
+    // Toggle current answer
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+      icon.textContent = '+';
+    } else {
+      answer.style.display = 'block';
+      icon.textContent = '−';
+    }
+  });
+});
+
+function redirectCountry(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the search query from the input field
+    const searchInput = document.getElementById("searchInput").value.trim();
+
+    // If the search input is empty, do nothing
+    if (searchInput === "") {
+        alert("Please enter a university name to search.");
+        return;
+    }
+
+    // Add a timestamp to prevent caching of the search result
+    const timestamp = new Date().getTime();
+
+    // Redirect to the search page with the search term and timestamp
+    window.location.href = `search_aus.php?search_query=${encodeURIComponent(searchInput)}&t=${timestamp}`;
+
+    // Clear the input field for the next search
+    document.getElementById("searchInput").value = "";
+}
+
+  </script>
+</body>
+</html>

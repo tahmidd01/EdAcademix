@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countries</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/uc_contact.css">
+	<link rel="stylesheet"  href="css/responsive.css">
+</head>
+<body>
+	<!-- header part html start -->
+	<header>
+	<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="welcome">
+					<p>Welcome to EdAcademix</p>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="header_text">
+					<p>Your Bridge to Global Success!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+	 <!-- header part html end -->
+    
+   <!-- Navbar HTML part start -->
+<nav class="navbar navbar-expand-lg">
+	<div class="container">
+	  <a class="navbar-brand" href="#">
+		<img src="img/EDLOGO.png">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link " aria-current="page" href="../index.php">Home</a>
+		  </li>
+           <!-- Dream Countries Dropdown -->
+<li class="nav-item dropdown" id="dreamDropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dream Countries
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dreamcountry-option" href="../desh.html"><b>Australia</b></a></li>
+    <li><a class="dreamcountry-option" href="../desh2.html"><b>England</b></a></li>
+    <li><a class="dreamcountry-option" href="../desh3.html"><b>Germany</b></a></li>
+    <!-- <li><a class="dreamcountry-option" href="../desh4.html"><b>Italy</b></a></li> -->
+    <li><a class="dreamcountry-option" href="../desh5.html"><b>United States of America</b></a></li>
+    <li><hr class="dropdown-divider"></li>
+  </ul>
+</li>
+  
+		  <li class="nav-item">
+			<a class="nav-link" href="#">IELTS Prep</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Get Offer Letter</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../contact.php">Contacts</a>
+		  </li>
+		  
+
+				<li><hr class="dropdown-divider"></li>
+			</ul>
+		<!-- Search Form -->
+        <div id="suggestions" class="suggestions"></div>
+<form class="d-flex" role="search" method="get" action="#" onsubmit="return validateSearch()">
+    <input id="searchInput" name="search_query" class="search-input" type="search" placeholder="Search for subjects" aria-label="Search" required>
+    <button class="search-button" type="submit">
+        <img src="img/search.png" alt="Search" class="search-icon">
+    </button>
+</form>	  
+	  </div>
+	</div>
+  </nav>
+ <!-- Navbar HTML part end  -->
+
+<!-- 2nd navbar html start-->
+<nav class="second-navbar">
+	<div class="container">
+	  <ul class="nav-list">
+      <!-- LEFT SIDE -->
+      <li class="left-group d-flex align-items-center gap-3">
+
+        <button class="home-button" onclick="location.href='../index.php';">
+          <img src="img/h1.png" alt="Home">
+        </button>
+				<!-- ✅ Academics Dropdown -->
+<li class="nav-item dropdown-ac" id="academicsDropdown">
+
+			<a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownToggle">
+				Academics
+			</a>
+			<ul class="dropdown-menu" id="dropdownMenu">
+				<li><a class="academics-options" href="../pro_academic_uc.php">Programs</a></li>
+				<li><a class="academics-options" href="../scholar_academic_uc.php">Scholarships</a></li>
+				<li><a class="academics-options" href="../fee_academic_uc.php">Tution Fees</a></li>
+
+				<li><hr class="dropdown-divider"></li>
+			</ul>
+			</li>
+
+        <a href="../req_uc.php">Requeirments</a>
+        <a href="uc_contact.html">Help-Line</a>
+      </li>
+
+      <!-- RIGHT SIDE -->
+      <li class="right-group ms-auto d-flex align-items-center gap-3">
+        <a href="#">FAQs</a>
+        <a href="#">Log in / Sign up</a>
+        <button class="profile-button">
+          <img src="img/p1.png" alt="Profile">
+        </button>
+      </li>
+	  </ul>
+	</div>
+  </nav>
+
+  <!-- 2nd navbar html end-->
+
+<!-- banner part start -->
+<div id="banner">
+  <div class="banner_overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box animate-banner">
+            <h1 class="banner-title"><b>Contact & Location</b></h1>
+            <p class="location">
+              <i class="fas fa-map-marker-alt"></i> University of Cambridge, The Old Schools,<br />
+             Trinity Lane, Cambridge, CB2 1TN, UK
+            <div class="contact-box">
+              <p><i class="fas fa-phone-alt"></i> +44 1223 333308</p>
+              <hr />
+              <p><i class="fas fa-envelope"></i> <b>Mail:</b> international@admin.cam.ac.uk</p>
+              <p><i class="fas fa-globe"></i>
+                <a href="https://www.cam.ac.uk/" target="_blank"><b>https://www.cam.ac.uk/</b></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banner part end -->
+
+
+ <!-- footer line starts -->
+  <div class="secondary-footer">
+	<!-- your content -->
+  </div>
+  
+  <!-- footer line ends -->
+
+<!-- footer2 html part start  -->
+ <footer>
+	<div class="container">
+		<div class="row">
+			<!-- 1st Column: Company Info -->
+			<div class="col-md-4">
+				<div class="footer_text">
+					<h3><b><u>ADDRESS</u></b></h3>
+					<p>United International University, UIU Permanent Campus</p>
+					<p>United City, Madani Avenue</p>
+					<p>Notun Bazar, 100 - Feet, Dhaka - 1212</p>
+				</div>
+			</div>
+			
+			<!-- 2nd Column: Links -->
+			<div class="col-md-4">
+				<div class="footer_links">
+					<h3><b><u>USEFUL LINKS</u></b></h3>
+					<ul>
+						<li><a href="../about.php">About EdAcademix</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Success Stories</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 3rd Column: Social Media -->
+			<div class="col-md-4">
+				<div class="footer_social">
+				  <h3><b><u>FOLLOW US</u></b></h3>
+				  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+				  <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+				  <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+				  <a href="#"><i class="fas fa-envelope"></i> Email</a>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="footer-bottom-left">
+		  <a href="#" class="copyright">@Copyright</a>
+		</div>
+		<div class="footer-bottom-right">
+		  <span>||</span>
+		  <a href="#">Data Privacy Statement</a>
+		  <span>||</span>
+		  <a href="#">Cookies</a>
+		  <span>||</span>
+		</div>
+	  </div>
+	  
+	  
+</footer>
+<!-- footer html part end  -->
+
+
+
+ <!-- js link start -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldZa5p5fC2G6KZs4Ks8lg2a44cId4jTkz76PKaX" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cn7l7gDp0eyIG6mvEH16lAaqjZfGnirKwrjvJoaAqh6Ez4eZ0CtFLR69Zo5I2sT" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src ="js/bootstrap.bundle.min.css"></script>
+ <script src = "js/custom.js"></script>
+
+ <!-- js link end -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // ✅ Toggle Dropdown Helper
+  function setupDropdown(toggleSelector, menuSelector, containerId) {
+    const toggle = document.querySelector(toggleSelector);
+    const menu = document.querySelector(menuSelector);
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        menu.classList.toggle('show');
+      });
+
+      // Attach only one global click listener per dropdown
+      document.addEventListener('click', function (e) {
+        if (!document.getElementById(containerId).contains(e.target)) {
+          menu.classList.remove('show');
+        }
+      });
+    }
+  }
+
+  // ✅ Setup Academics and Dream Countries dropdowns
+  setupDropdown('#academicsDropdown > a.nav-link.dropdown-toggle', '#academicsDropdown > ul.dropdown-menu', 'academicsDropdown');
+  setupDropdown('#dreamDropdown > a.nav-link.dropdown-toggle', '#dreamDropdown > ul.dropdown-menu', 'dreamDropdown');
+
+  // ✅ Banner dropdowns (unchanged)
+  function toggleBannerDropdown(dropdownId) {
+    document.querySelectorAll('.banner-dropdown').forEach(dropdown => {
+      if (dropdown.id === dropdownId) {
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      } else {
+        dropdown.style.display = 'none';
+      }
+    });
+  }
+
+  const fieldsBtn = document.getElementById("fieldsBtn");
+  if (fieldsBtn) {
+    fieldsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("fieldsDropdown");
+    });
+  }
+
+  const programsBtn = document.getElementById("programsBtn");
+  if (programsBtn) {
+    programsBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("programsDropdown");
+    });
+  }
+
+  const feesBtn = document.getElementById("feesBtn");
+  if (feesBtn) {
+    feesBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleBannerDropdown("feesDropdown");
+    });
+  }
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest('.info-links')) {
+      document.querySelectorAll('.banner-dropdown').forEach(dropdown => {
+        dropdown.style.display = 'none';
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

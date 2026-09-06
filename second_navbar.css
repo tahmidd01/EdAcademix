@@ -1,0 +1,104 @@
+/* 2nd navbar css part start */
+.second-navbar {
+  background-color: white;
+  color: black;
+  padding: 6px 0; /* Match padding closer to main navbar */
+  position: relative;
+  border-bottom: 1px solid #ddd; /* Optional: subtle separator line */
+  border-color: black;/* Explicit border color */
+  border-width: 1px;
+}
+
+
+.second-navbar .nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: left; /* Align items to the right */
+  margin: 0; /* Remove default margin */
+  align-items: center;
+  gap: 966px; /* Space between the items */
+}
+
+.second-navbar .nav-list li {
+  display: inline-block;
+}
+
+.second-navbar .nav-list a {
+  text-decoration: none; /* Remove underline */
+  color: black;
+  font-size: 16px; /* Text size */
+  padding: 15px 25px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.second-navbar .nav-list a:hover {
+  background-color: #155C60; /* Slightly lighter shade on hover */
+}
+
+.second-navbar .nav-list a:active {
+  background-color: #444; /* Even darker shade when active */
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-list .home-button {
+  margin-right: auto; /* Push this item to the far left */
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.home-button img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+
+.right-group {
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.right-group img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.profile-button img {
+  width: 28px;
+  height: 28px;
+  border: none;
+  outline: none;
+}
+
+
+/* 2nd navbar css part end */

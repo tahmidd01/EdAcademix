@@ -1,0 +1,63 @@
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+@media (min-width: 320px) and (max-width: 575px){
+  .welcome{
+  	text-align: center;
+  }
+  .header-icon ul{
+     margin: 5px 21%;
+     display: block;
+  }
+  .banner-overlay{
+  	padding: 20px 0;
+  }
+  .banner-content p{
+	padding-bottom: 14px;
+  }
+  .banner-content a{
+	padding: 10px 30px;
+}
+.about_content P{
+	text-align: justify;
+}
+.service-main{
+	margin-top: 60px;
+}
+.small{
+	margin-top: 20px;
+ }
+ .team_main{
+ 	margin-bottom: 30px;
+ 	border-bottom: 2px solid gray;
+ }
+ .piramid{
+	top: -9%;
+	left: 43%;
+  }
+  .testimonial_content{
+  	margin-bottom: 30px;
+  }
+
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px){
+  
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px){
+
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width:1199px) {
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width:1399px) {
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
